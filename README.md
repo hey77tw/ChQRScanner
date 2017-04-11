@@ -1,6 +1,6 @@
 # QRScanner
 
-///C
+```Objective-C
 #import "QRScanner.h"
 
 @interface yourViewController () <QRScannerDelegate>
@@ -33,4 +33,4 @@
 
 @end
 
-///
+```
