@@ -1,5 +1,6 @@
 # QRScanner
 
+///C
 #import "QRScanner.h"
 
 @interface yourViewController () <QRScannerDelegate>
@@ -31,3 +32,5 @@
 }
 
 @end
+
+///
