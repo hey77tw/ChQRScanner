@@ -4,7 +4,9 @@
  */
 
 #import <Foundation/Foundation.h>
+#import <UIKit/UIKit.h>
 #import <AVFoundation/AVFoundation.h>
+
 
 @protocol ChQRScannerDelegate
 -(void)qrCodeDidScan:(AVMetadataMachineReadableCodeObject *)metadataObj;

@@ -30,7 +30,7 @@
     AVCaptureDeviceInput *deviceInput = [AVCaptureDeviceInput deviceInputWithDevice:captureDevice error:&error];
     
     if(!deviceInput){
-        DebugLog(@"%@",[error localizedDescription]);
+        NSLog(@"%@",[error localizedDescription]);
         return NO;
     }
     
@@ -65,7 +65,7 @@
 -(void)captureOutput:(AVCaptureOutput *)captureOutput didOutputMetadataObjects:(NSArray *)metadataObjects fromConnection:(AVCaptureConnection *)connection{
     
     if(metadataObjects && metadataObjects.count > 0){
-        DebugLog(@"MetadataObjects:%@",metadataObjects);
+        NSLog(@"MetadataObjects:%@",metadataObjects);
         
         AVMetadataMachineReadableCodeObject *metadataObj = [metadataObjects objectAtIndex:0];
         
