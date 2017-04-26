@@ -1,11 +1,11 @@
-# QRScanner
+# ChQRScanner
 
 ```Objective-C
-#import "QRScanner.h"
+#import "ChQRScanner.h"
 
-@interface yourViewController () <QRScannerDelegate>
+@interface yourViewController () <ChQRScannerDelegate>
 {
-    QRScanner * qrScanner;
+    ChQRScanner * qrScanner;
 }
 @end
 
@@ -14,13 +14,13 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
 
-    qrScanner = [[QRScanner alloc] initWithView:qrScannerPreviewView];
+    qrScanner = [[ChQRScanner alloc] initWithView:qrScannerPreviewView];
     qrScanner.delegate = self;
     
     [qrScanner startReading];
 }
 
-#pragma mark - QRScannerDelegate
+#pragma mark - ChQRScannerDelegate
 
 -(void)qrCodeDidScan:(AVMetadataMachineReadableCodeObject *)metadataObj{
     [qrScanner stopReading];
